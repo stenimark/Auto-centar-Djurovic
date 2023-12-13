@@ -1,0 +1,420 @@
+body{
+    margin: auto;
+}
+.nav-bar {
+    background-image: linear-gradient(to right, #a8a3a3, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 100px;
+}
+
+.nav-bar img {
+    width: 350px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin-right: 20px;
+}
+
+.nav-bar ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(68, 62, 62);
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-bar ul li a:hover {
+    background-color: rgb(172, 214, 253);
+}
+
+.audi-pocetna {
+    position: relative;
+    height: 700px;
+    background-image: url("../img/pocetna.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+.audi-pocetna h1{
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(133, 133, 133), white);
+    border-radius: 25px;
+    padding: 15px 32px;
+    color: blue;  
+} 
+.pocetna-text{
+    background-color: transparent; 
+    margin-right: 100px;
+    margin-top: 20px;
+    font-family: fantasy;
+    margin-right: 300px;  
+}
+.pocetna-text .dugme{
+    text-decoration: none;
+}
+.dugme a{
+    background-color: #808080;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;    
+}
+.dugme a:hover{
+    background-color: rgb(27, 27, 239);
+    transition: 0.3s ease;
+}
+/*ovde ispod slike*/
+.pocetna-dva{
+    height: 500px;
+    margin: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #777373, #ffffff);    margin-top: 10px;
+}
+.karoserija-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.karoserija-holder .karoserija{
+    width: 300px;
+    height: 400px;
+    border: 10px solid rgb(59, 59, 173);
+    border-radius: 25px;
+    padding: 20px;
+    margin: 35px;
+    
+}
+.karoserija-holder .karoserija:hover{
+    border-color: aqua;
+    transition: 0.2s ease;
+}
+.karoserija img{
+    width: 100%;
+    height: 50%;
+}
+.karoserija-holder .karoserija h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(126, 126, 145);
+}
+.karoserija-naruci{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: cursive;
+}
+.karoserija-naruci a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(65, 65, 180);
+    padding: 12px 20px;
+    border-radius: 25px;
+    margin-left: 70px;
+}
+.karoserija-naruci a:hover{
+    background-color: lightblue;
+    transition: 0.3s ease;
+}
+.h-istorija{
+    text-align: center;
+    color: rgb(77, 77, 77);
+    border: 1px solid black;
+    background-color: rgb(102, 59, 255);
+}
+.audi-godina{
+    text-align: center;
+}
+.audi-godina img{
+    width: 70%;
+}
+.istorija-p p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    justify-content: center;
+}
+footer{
+    height: 200px;
+    background-image: linear-gradient(to bottom, white, #827b7b);
+}
+.footer{
+    margin: 0px 70px;
+    background-image: linear-gradient(to right, #827b7b, #ffffff);
+    border-radius: 20px;
+}
+.footer-kontakt{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0px 50px;
+    text-align: center;
+}
+.footer .broj-ime{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: green;
+    font-size: 20px;
+}
+.footer .broj{
+    font-weight: bold;
+    color: rgb(57, 55, 55);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.emailfooter{
+    text-decoration: none;
+    color: rgb(57, 55, 55);
+}
+.playlogo{
+    margin: 0px 70px;
+    display: flex;
+    justify-content: center;
+}
+.playtext p{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.kontakt-pozadina{
+    background-image: url("../img/kontakt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 620px; 
+    display: flex;
+    justify-content: center;
+}
+.kontakt-pozadina .forma{
+    border: 3px solid rgb(237, 237, 237);
+    border-radius: 55px;
+    height: 520px;
+    width: 700px;
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kontakt-pozadina .forma:hover{
+    border-color: rgb(87, 87, 255);
+    transition: 0.3s ease;
+}
+.forma h1{
+    color: white;
+    text-align: center;
+}
+.forma p{
+    color: white;
+}
+.forma textarea{
+    height: 140px;
+}
+.box{
+    background-color: rgb(205, 183, 183, 0.5);
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    border-radius: 30px;
+}
+.submit{
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(30, 30, 247);
+}
+.submit:hover{
+    transition: 0.3s ease;
+    background-color: aqua;
+}
+.mapa{
+    background-image: linear-gradient(to bottom, black, #ffffff);
+    text-align: center;
+
+}
+.mapa h1{
+    margin: auto;
+    color: white;
+}
+.mapa iframe{
+    margin-top: 40px;
+    border-radius: 25px;
+}
+.automobili-pocetna {
+    position: relative;
+    height: 615px;
+    width: 100%;
+    background-image: url("../img/automobili-pocetna.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: right;   
+}
+.automobili-pocetna h1{
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(133, 133, 133), white);
+    border-radius: 25px;
+    padding: 15px 32px;
+    color: rgb(85, 85, 85);  
+} 
+.autopocetna-text{
+    background-color: transparent; 
+    margin-right: 100px;
+    margin-top: 20px;
+    font-family: fantasy;
+    margin-right: 300px;  
+}
+.automobili{
+        height: auto;
+}
+.automobili h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(134, 98, 105);
+}
+.drzac-automobila{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-wrap: wrap;
+}
+.drzac{
+    height: 250px;
+    width: 400px;
+    text-decoration: none;
+    margin: 25px;
+    color: black;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .2);
+}
+.drzac:hover{
+    box-shadow: 0 20px 8px 0 rgb(63, 63, 140)
+}
+.drzac-slike{
+    width: 100%;
+    height: 75%;
+    
+    text-align: center;
+}
+.drzac-slike img{
+    width: auto;
+    height: 200px;
+}
+.drzac-texta p{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;    
+}
+.usluge-pozadina{
+    background-image: url("../img/usluge-pozadina.jpg");
+    height: 603px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.usluga{
+    border: 1px solid black;
+    height: 250px;
+    border-radius: 50px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(91, 84, 157, 0.5);
+}
+.usluga a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+.usluga:hover{
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+}
+#movingSquare {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
+    animation: moveRight 6s ease-in-out infinite;
+}
+#movingSquare img{
+    height: 100px;
+}
+  
+  @keyframes moveRight {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100% - 50px);
+      transform: translateX(-100%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column; 
+      height: auto; 
+    }
+  
+    .nav-bar img {
+      width: 100%; 
+    }
+  
+    .nav-bar ul {
+      flex-direction: column; 
+      text-align: center; 
+    }
+  
+    .nav-bar ul li {
+      margin: 10px 0; 
+    }
+  
+    .nav-bar ul li a {
+      padding: 10px; 
+    }
+  
+    .audi-pocetna {
+      height: auto; 
+    }
+  
+    .audi-pocetna h1 {
+      font-size: 20px; 
+    }
+  
+    .pocetna-text {
+      margin-right: 20px;
+    }
+    .automobili-pocetna{
+        position: relative;
+        background-size: 900px 500px;
+    }
+    .automobili-pocetna h1{
+        width: 100px;
+    }
+    .autopocetna-text{
+        width: 0px;
+    }
+  }
+  
