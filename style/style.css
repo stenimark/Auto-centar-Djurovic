@@ -407,14 +407,17 @@ footer{
       margin-right: 20px;
     }
     .automobili-pocetna{
-        position: relative;
-        background-size: 900px 500px;
+        height: 605px;
+        width: 100%;
     }
     .automobili-pocetna h1{
         width: 100px;
     }
     .autopocetna-text{
         width: 0px;
+    }
+    iframe{
+        width: 100%;
     }
   }
   
