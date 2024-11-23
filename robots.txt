@@ -1,0 +1,4 @@
+User-agen:*
+Disallow:
+
+sitemap:https://stenimark.github.io/Auto-centar-Djurovic/sitemap.xml
