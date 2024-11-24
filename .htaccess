@@ -1,0 +1,43 @@
+# Enable mod_rewrite (if not already enabled)
+RewriteEngine On
+
+# Redirect HTTP to HTTPS (if using SSL certificate)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Custom 404 error page
+ErrorDocument 404 /404.html
+
+# Clean URLs (remove .html from the end of URLs)
+RewriteRule ^(.*)/$ $1.html [L]
+
+# Protect .htaccess file
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Enable Gzip compression for faster page loading
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
+</IfModule>
+
+# Static content caching (images, CSS, JS)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 year"
+</IfModule>
+
+# Block specific IP address (adjust IP as needed)
+Order Deny,Allow
+Deny from 123.456.789.101
+Allow from all
+
+# Deny access to specific files like .htaccess, .ini, .log, etc.
+<FilesMatch "\.(htaccess|htpasswd|ini|log)$">
+  Order Deny,Allow
+  Deny from all
+</FilesMatch>
+
+# Redirect old URLs to new ones (if necessary)
+# Redirect 301 /old-url https://www.yoursite.com/new-url
